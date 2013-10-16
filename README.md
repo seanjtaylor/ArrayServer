@@ -45,3 +45,23 @@ Accessing the array later (look ma, no disk!)
 >>> myarray.sum()
 memmap(249876.10611505382)
 ```
+
+Deleting the array
+------------------
+
+```python
+>>> from arrayserver import ArrayClient
+
+>>> c = ArrayClient()
+>>> del c['myarray']
+```
+
+TODO
+----
+
+* create a package
+* oh god how do I test this?
+* benchmarks
+* maybe persist mmapped files if server crashes?
+* implement ``keys()`` method
+* see how this plays with Pandas Series/DataFrame
