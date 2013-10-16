@@ -9,8 +9,7 @@ import numpy as np
 class ArrayClient(UserDict):
     """Dictionary interface to persistent memory mapped arrays"""
     
-    def __init__(self, host='localhost', port=6000, tempdir=None):
-        self.tempdir = tempdir or tempfile.mktemp()
+    def __init__(self, host='localhost', port=6000):
         self.host = host
         self.port = port
 

@@ -5,6 +5,11 @@ ArrayServer
 
 Ever wanted to store large numpy arrays persistently, but using something faster than disk? Well here you go.  The server process holds a handle to a memory mapped file containing a binary representation of a numpy array.  When the client requests the array, the server returns the filename and the client can access the memory mapped array without having to read from disk.
 
+Obligatory
+----------
+
+This is *not* production quality code.  It is a one-hour hack.  I do think it's not too far off from being useful for a lot of people.  Pull-requests welcome!
+
 Starting the server
 -------------------
 
